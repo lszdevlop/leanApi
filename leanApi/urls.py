@@ -20,6 +20,6 @@ from sample import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello', views.hello),
-    path('user/<int:id>', views.user)
+    path('calculator', views.calculator),
 
 ]
