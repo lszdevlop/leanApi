@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello', views.hello),
     path('calculator', views.calculator),
-    path('calculate', views.calculate),
+    # path('calculate', views.calculate),
 
 ]
