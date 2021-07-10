@@ -17,9 +17,12 @@
 
     function calculator(){
         console.log("点击计算按钮")
+        var one = $("[name=number1]").val()
+        var two = $("[name=number2]").val()
+
         $.get("api/calculate",{
-            number1:1
-            number2:2
+            number1:one
+            number2:two
         },function(result){
             console.log('返回的结果',result);
     });
