@@ -10,7 +10,22 @@
     <input type="text" name="number1"> +
     <input type="text" name="number2"> =
     <br>
-    <input type="submit" value="计算">
+    <input type="submit" value="计算" onclick="calculator();">
 </form>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+<script type="text/javascript">
+
+    function calculator(){
+        console.log("点击计算按钮")
+        $.get("api/calculate",{
+            number1:1
+            number2:2
+        },function(result){
+            console.log('返回的结果',result);
+    });
+    }
+
+
+</script>
 </body>
 </html>
