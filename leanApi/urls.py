@@ -23,5 +23,4 @@ urlpatterns = [
     path('calculator', views.calculator),
     path('api/calculate', views.calculate),
     path("api/v1", include("api.urls")),
-
 ]
